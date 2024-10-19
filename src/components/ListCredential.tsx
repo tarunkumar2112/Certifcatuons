@@ -194,7 +194,7 @@ const Credentials: React.FC = () => {
                           }}
                           checked={selectedIds.length === credentials.length && credentials.length > 0}
                         />
-                      </th>                      <th>Credentials ID</th>
+                      </th><th>Credentials ID</th>
                       <th>Recipient</th>
                       <th>Group</th>
                       <th>Issue Date</th>
