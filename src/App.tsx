@@ -41,7 +41,7 @@ const App: React.FC = () => {
               } 
             />
             <Route 
-              path="/viewcrdentials" 
+              path="/viewcredential/:id" 
               element={
                 <motion.div 
                   initial={{ opacity: 0 }} 
