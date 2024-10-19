@@ -1,0 +1,79 @@
+
+/*****header-start-here*********/
+.container {
+    width: 1720px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px 50px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background: #000;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  
+  
+  .header .header-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header .header-left {
+    display: flex;
+    width: 50%;
+    column-gap: 200px;
+  }
+  .header .header-left .nav-links {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+  
+  .header .header-left .nav-links li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    list-style: none;
+  }
+  
+  
+  
+  
+  .header-right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    column-gap: 40px;
+    align-items: center;
+  }
+  
+  .header-right .help-button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    list-style: none;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  
+  .header-right .select-header {
+    background: #BDE0F7;
+    border-radius: 7px;
+    padding: 0px 20px;
+    width: 250px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #8F8F8F;
+  }
