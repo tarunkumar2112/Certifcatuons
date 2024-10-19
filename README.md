@@ -1,5 +1,5 @@
 
-# Accredible-API
+# DLT Certfication With Accredible API
 
 A React.js application that allows users to create credentials by entering their name and email. The app integrates with an external API to generate credentials and displays the API response. It includes a loading spinner for enhanced user experience during API requests.
 
