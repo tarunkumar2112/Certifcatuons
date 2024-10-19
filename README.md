@@ -1,46 +1,136 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DLT Certfication With Accredible API
 
-## Available Scripts
+A React.js application that allows users to create credentials by entering their name and email. The app integrates with an external API to generate credentials and displays the API response. It includes a loading spinner for enhanced user experience during API requests.
 
-In the project directory, you can run:
+## Prerequisites
 
-### `npm start`
+Before you begin, ensure you have met the following requirements:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Node.js** (v14 or later): [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js) or **Yarn**: [Download Yarn](https://yarnpkg.com/)
+- **Git**: [Download Git](https://git-scm.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the Repository**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/tarunkumar2112/DLT-Certifications/.git
+   ```
 
-### `npm run build`
+2. **Navigate to the Project Directory**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd DLT-Certifications
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Install Dependencies**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Using npm:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   Or using Yarn:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   yarn install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. **Environment Variables**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   - **Create a .env File**
 
-## Learn More
+     In the root directory of the project, create a file named `.env`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - **Add the Following Variables**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```env
+     REACT_APP_API_URL=https://api.accredible.com/v1/credentials
+     REACT_APP_AUTH_TOKEN=//your token
+     REACT_APP_LIST_URL=https://api.accredible.com/v1/all_credentials
+     ```
+
+     - `REACT_APP_API_URL`: The endpoint for creating credentials.
+     - `REACT_APP_AUTH_TOKEN`: The authorization token required by the API.
+     
+     **Important**: Ensure the `.env` file is listed in your `.gitignore` to prevent sensitive information from being committed.
+
+## Running the Application Locally
+
+1. **Start the Development Server**
+
+   Using npm:
+
+   ```bash
+   npm start
+   ```
+
+   Or using Yarn:
+
+   ```bash
+   yarn start
+   ```
+
+2. **Access the Application**
+
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+## Deployment
+
+You can deploy the application to platforms like Vercel or Netlify. Below are the steps for both.
+
+### Deploying to Vercel
+
+1. **Sign Up / Log In to Vercel**
+
+   Visit Vercel and sign up or log in.
+
+2. **Import Your Git Repository**
+
+   Click on "New Project" and select your GitHub repository (Accredible-API).
+
+3. **Follow the Prompts to Configure the Project.**
+
+4. **Set Environment Variables**
+
+   During the deployment setup, add the environment variables from your local `.env` file:
+
+   - `REACT_APP_API_URL`
+   - `REACT_APP_AUTH_TOKEN`
+
+5. **Deploy**
+
+   Click "Deploy" and wait for Vercel to build and deploy your application. Once completed, Vercel will provide a live URL for your app.
+
+### Deploying to Netlify
+
+1. **Sign Up / Log In to Netlify**
+
+   Visit Netlify and sign up or log in.
+
+2. **Connect Your Git Repository**
+
+   Click on "New site from Git."
+
+   Select your Git provider and authorize Netlify to access your repositories.
+
+   Choose the Accredible-API repository.
+
+3. **Configure Build Settings**
+
+   - Build Command: `npm run build` or `yarn build`
+   - Publish Directory: `build`
+
+4. **Set Environment Variables**
+
+   In the "Build & Deploy" settings, add the environment variables:
+
+   - `REACT_APP_API_URL`
+   - `REACT_APP_AUTH_TOKEN`
+
+5. **Deploy Site**
+
+   Click "Deploy Site" and wait for Netlify to build and deploy your application. Netlify will provide a live URL upon completion.
