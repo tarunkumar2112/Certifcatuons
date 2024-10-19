@@ -16,7 +16,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/tarunkumar2112/DLT-Certifications/.git
+   git clone https://github.com/tarunkumar2112/DLT-Certifications.git
    ```
 
 2. **Navigate to the Project Directory**
