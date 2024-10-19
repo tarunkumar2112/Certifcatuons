@@ -22,7 +22,7 @@ Before you begin, ensure you have met the following requirements:
 2. **Navigate to the Project Directory**
 
    ```bash
-   cd Accredible-API
+   cd DLT-Certifications
    ```
 
 3. **Install Dependencies**
