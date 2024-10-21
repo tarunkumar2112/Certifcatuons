@@ -16,13 +16,13 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/tarunkumar2112/DLT-Certifications.git
+   git clone https://github.com/tarunkumar2112/Certifcatuons.git
    ```
 
 2. **Navigate to the Project Directory**
 
    ```bash
-   cd DLT-Certifications
+   cd Certifcatuons
    ```
 
 3. **Install Dependencies**
