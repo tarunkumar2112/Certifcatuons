@@ -213,12 +213,13 @@ const Credentials: React.FC = () => {
                           />
                         </td>
                         <td><Link to={`/viewcredential/${cred.id}`}>{cred.id}</Link></td>
-                        <td>
+                        <td className='td-hed'>
                           <span className={`circle ${cred.recipient.name[0].toLowerCase()}`}>
                             {cred.recipient.name[0]}
                           </span>
+                          <div className="mail-table-text">
                           {cred.recipient.name}<br />
-                          <small>{cred.recipient.email}</small>
+                          <small>{cred.recipient.email}</small></div>
                         </td>
                         <td><Link to={`/viewcredential/${cred.id}`}>{cred.group_name}</Link></td>
                         <td>{cred.issued_on}</td>

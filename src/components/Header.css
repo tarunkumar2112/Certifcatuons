@@ -7,7 +7,7 @@
   padding: 0px 50px !important;
   box-sizing: border-box;
 }
-
+.header-right div#demo-simple-select {text-align: left;display: flex;align-items: center;}
 .header {
   background: #000;
   width: 100%;
