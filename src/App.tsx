@@ -12,6 +12,7 @@ import Design from './components/Design';
 import Pathways from './components/Pathways';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './index.css';  //for fonts
 
 const fadeAnimation = {
   initial: { opacity: 0 }, // Start with opacity 0 (invisible)

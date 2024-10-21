@@ -7,6 +7,7 @@ import Spinner from './Spinner';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
+import './CreateCredential.css';
 
 const CreateCredential = () => {
   const [recipientName, setRecipientName] = useState('');
@@ -92,8 +93,8 @@ const CreateCredential = () => {
   };
 
   return (
-    <div>
-      <div className="create-credential-containers">
+    <div className="main-creaditianl-sec">
+      <div className="create-credential-containers container">
         <h2>Create Credentials for Contract Drafting Skills Workshop</h2>
         <div className="Steps">
           <div>
@@ -145,8 +146,10 @@ const CreateCredential = () => {
       </div>
 
       <div className="button-row">
+    <div className="container">
+<div className="bottom-row-inner">
         <Link to='/'><button className="button cancel-button">
-          <FontAwesomeIcon icon={faAngleLeft} /> Cancle
+          <FontAwesomeIcon icon={faAngleLeft} /> Back
         </button></Link>
         <span className="credential-message">
           <img src={credimg} alt="Credential" /> 1 Credential will be created
@@ -155,6 +158,8 @@ const CreateCredential = () => {
           {loading ? <Spinner /> : 'Create Credentials'}
           {!loading && <FontAwesomeIcon icon={faChevronRight} />}
         </button>
+        </div>
+        </div>
       </div>
 
       {errorMessage && <p className="error-message">{errorMessage}</p>}
