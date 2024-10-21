@@ -212,7 +212,7 @@ const Credentials: React.FC = () => {
                             onChange={() => handleCheckboxChange(cred.id)}
                           />
                         </td>
-                        <td>{cred.id}</td>
+                        <td><Link to={`/viewcredential/${cred.id}`}>{cred.id}</Link></td>
                         <td>
                           <span className={`circle ${cred.recipient.name[0].toLowerCase()}`}>
                             {cred.recipient.name[0]}
@@ -220,10 +220,10 @@ const Credentials: React.FC = () => {
                           {cred.recipient.name}<br />
                           <small>{cred.recipient.email}</small>
                         </td>
-                        <td><a href="#">{cred.group_name}</a></td>
+                        <td><Link to={`/viewcredential/${cred.id}`}>{cred.group_name}</Link></td>
                         <td>{cred.issued_on}</td>
                         <td>{cred.expired_on || '—'}</td>
-                        <td><button className="open-button">Open</button></td>
+                        <td> <Link to={`/viewcredential/${cred.id}`}><button className="open-button">Open</button></Link></td>
                       </tr>
                     ))}
                   </tbody>

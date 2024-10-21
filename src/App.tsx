@@ -13,6 +13,13 @@ import Pathways from './components/Pathways';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const fadeAnimation = {
+  initial: { opacity: 0 }, // Start with opacity 0 (invisible)
+  animate: { opacity: 1 }, // Fade in to opacity 1 (fully visible)
+  exit: { opacity: 0 }, // Fade out to opacity 0 (invisible)
+  transition: { duration: 0 } // Control the speed of the fade (0.5 seconds)
+};
+
 const App: React.FC = () => {
   const location = useLocation();
   
@@ -30,12 +37,7 @@ const App: React.FC = () => {
             <Route 
               path="/" 
               element={
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  exit={{ opacity: 0 }} 
-                  transition={{ duration: 0.5 }} 
-                >
+                <motion.div {...fadeAnimation}>
                   <ListCredential />
                 </motion.div>
               } 
@@ -43,12 +45,7 @@ const App: React.FC = () => {
             <Route 
               path="/viewcredential/:id" 
               element={
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  exit={{ opacity: 0 }} 
-                  transition={{ duration: 0.5 }} 
-                >
+                <motion.div {...fadeAnimation}>
                   <ViewCredential />
                 </motion.div>
               } 
@@ -56,12 +53,7 @@ const App: React.FC = () => {
             <Route 
               path="/createcredentials" 
               element={
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  exit={{ opacity: 0 }} 
-                  transition={{ duration: 0.5 }} 
-                >
+                <motion.div {...fadeAnimation}>
                   <CreateCredential />
                 </motion.div>
               } 
@@ -69,12 +61,7 @@ const App: React.FC = () => {
             <Route 
               path="/success/:id" 
               element={
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  exit={{ opacity: 0 }} 
-                  transition={{ duration: 0.5 }} 
-                >
+                <motion.div {...fadeAnimation}>
                   <Success />
                 </motion.div>
               } 
@@ -82,12 +69,7 @@ const App: React.FC = () => {
             <Route 
               path="/design" 
               element={
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  exit={{ opacity: 0 }} 
-                  transition={{ duration: 0.5 }} 
-                >
+                <motion.div {...fadeAnimation}>
                   <Design />
                 </motion.div>
               } 
@@ -95,12 +77,7 @@ const App: React.FC = () => {
             <Route 
               path="/pathways" 
               element={
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
-                  exit={{ opacity: 0 }} 
-                  transition={{ duration: 0.5 }} 
-                >
+                <motion.div {...fadeAnimation}>
                   <Pathways />
                 </motion.div>
               } 
