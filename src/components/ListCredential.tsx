@@ -42,7 +42,7 @@ const Credentials: React.FC = () => {
       };
 
       try {
-        const response = await fetch(`${process.env.REACT_APP_LIST_URL}?group_id=626573`, requestOptions);
+        const response = await fetch(`${process.env.REACT_APP_LIST_URL}?group_id=IDLT0001`, requestOptions);
         const contentType = response.headers.get('content-type');
 
         if (contentType && contentType.includes('application/json')) {

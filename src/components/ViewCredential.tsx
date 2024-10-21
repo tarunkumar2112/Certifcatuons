@@ -155,8 +155,7 @@ const ViewCredential = () => {
                   <img 
                   src={credential.certificate.image.preview}
                   alt="credential Preview"
-                  /
-                  >
+                  />
                 </div>
             </div>
           </div>

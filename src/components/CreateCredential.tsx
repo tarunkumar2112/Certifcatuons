@@ -47,7 +47,7 @@ const CreateCredential = () => {
           name: recipientName,
           email: email,
         },
-        group_id: 626573, // Static group ID
+        group_id: 632733, // Static group ID
         issued_on: issueDate,
         approve: false,
       },
