@@ -149,7 +149,16 @@ const ViewCredential = () => {
       <button type="submit">Save</button>
     </form>
             </div>
-            <div className="column View-column"></div>
+            <div className="column View-column">
+              <p>Credential Preview</p>
+                <div className="main-bview-column">
+                  <img 
+                  src={credential.certificate.image.preview}
+                  alt="credential Preview"
+                  /
+                  >
+                </div>
+            </div>
           </div>
         </div>
       </div>

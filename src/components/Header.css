@@ -67,8 +67,8 @@
   height: fit-content;
 }
 
- .header-right div#demo-simple-select {
-  background: #BDE0F7;
+.header-right div#demo-simple-select {
+  background: #805bcf70;
   border-radius: 7px;
   padding: 0px 20px;
   width: 250px;
@@ -77,5 +77,18 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: #8F8F8F;
-}  
+  color: #fff;
+}
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root {
+  color: #fff;
+}
+
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #fff;
+}
+.css-lohd6h-MuiSvgIcon-root-MuiSelect-icon path{
+  fill:#fff;
+}
+.css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root {
+  color: #fff !important;
+}

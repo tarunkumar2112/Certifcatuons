@@ -13,8 +13,8 @@ const Success = () => {
   };
 
   return (
-    <div>
-      <div className="create-credential-containers">
+    <div className='main-creaditianl-sec'>
+      <div className="create-credential-containers container">
         <h2>Create Credentials for Contract Drafting Skills Workshop</h2>
         <div className="Steps">
           <div>
@@ -25,6 +25,7 @@ const Success = () => {
       </div>
 
       <div className="container">
+        <div className="instrustion-succes">
         <CheckmarkComponent />
         <h2>1 Credential Has Been Created. But Not Published Yet</h2>
         <p className="instructions">
@@ -37,6 +38,7 @@ const Success = () => {
         <button className="btn-view-unpublished" onClick={handleViewCredentials}>
           View Unpublished Credentials
         </button>
+      </div>
       </div>
     </div>
   );
